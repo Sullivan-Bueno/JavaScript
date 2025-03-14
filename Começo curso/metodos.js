@@ -10,3 +10,7 @@ console.log(string.toLowerCase());
 console.log(string.slice(0, 3)); // numeros negativos vão de tras pra frente
 
 console.log(string.substring(0, 3)); // não aceita indice negativo
+
+string.replace("mundo", "Sullivan");
+
+string.indexOf("mundo"); // indice
