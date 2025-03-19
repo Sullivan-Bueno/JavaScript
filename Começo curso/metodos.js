@@ -14,3 +14,10 @@ console.log(string.substring(0, 3)); // não aceita indice negativo
 string.replace("mundo", "Sullivan");
 
 string.indexOf("mundo"); // indice
+
+// split(delimiter [, limlter]);
+let texto = "maça,banana,laranja,uvas"
+let frutas = texto.split(",", 3); // (/\s+/)
+console.log(frutas);
+
+// splice(inicial, itensARemover) metodo de array
