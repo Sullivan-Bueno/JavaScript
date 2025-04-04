@@ -14,7 +14,7 @@ console.log(produto);
 Object.defineProperty(produto, "disponibilidade", { value: false }); // altera propriedade do objeto
 console.log(produto);
 
-const pessoa = {
+const pessoa1 = {
   nome: "Carlos",
   idade: 30,
 };
@@ -25,7 +25,8 @@ const trabalho = {
 };
 
 const funcionario = {};
-Object.assign(funcionario, pessoa, trabalho); // junção de propriedades de dois objetos
+
+Object.assign(funcionario, pessoa1, trabalho); // junção de propriedades de dois objetos
 Object.defineProperty(funcionario, "salario", {
   value: 2000,
   enumerable: true,
@@ -36,3 +37,18 @@ console.log(funcionario);
 
 delete funcionario.salario;
 console.log(funcionario);
+
+// aula 2
+
+const pessoa2 = {
+  cidade: "São Paulo",
+  falar: function () {
+    console.log("Olá");
+  },
+};
+
+const joao = Object.create(pessoa2); // HERANÇA entre dois objetos, porém não recebe as propriedades
+joao.falar();
+console.log(joao, joao.cidade);
+
+console.log(joao.hasOwnProperty("cidade"));

@@ -15,6 +15,6 @@ let frutas = ["maca", "banana", "laranja", "uva"];
 
 console.log(frutas.includes("maca"));
 
-.every() // todos os elementos possuem uma condição verdadeira
-.some() // algum elemento possui condição verdadeira
-.join(", ") // junta o array em uma string 
+//.every() // todos os elementos possuem uma condição verdadeira
+//.some() // algum elemento possui condição verdadeira
+//.join(", ") // junta o array em uma string 
