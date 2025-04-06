@@ -2,7 +2,6 @@
 
 let string = "Olá, mundo!";
 
-
 console.log(string.toLowerCase());
 
 // slice(start, end);
@@ -16,7 +15,7 @@ string.replace("mundo", "Sullivan");
 string.indexOf("mundo"); // indice
 
 // split(delimiter [, limlter]);
-let texto = "maça,banana,laranja,uvas"
+let texto = "maça,banana,laranja,uvas";
 let frutas = texto.split(",", 3); // (/\s+/)
 console.log(frutas);
 
@@ -27,10 +26,10 @@ let produtos = ["carrinho", "boneca", "bola"];
 produtos.push(50, 10, 30); // ao final da lista
 console.log(produtos);
 
-produtos.unshift("video game") // inicio da lista
+produtos.unshift("video game"); // inicio da lista
 console.log(produtos);
 
-produtos.pop() // remove o ultimo item da lista
-produtos.shift() // remove o primeiro item da lista
+produtos.pop(); // remove o ultimo item da lista
+produtos.shift(); // remove o primeiro item da lista
 
 console.log(produtos);
