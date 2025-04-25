@@ -35,8 +35,38 @@ function random(min, max) {
 
 function data(data1, data2) {
   let diferençaMilissegundos = new Date(data2) - new Date(data1);
-  let diferençaEmDias = diferençaMilissegundos / (1000 * 60 * 60 * 24)
-  console.log(diferençaEmDias)
+  let diferençaEmDias = diferençaMilissegundos / (1000 * 60 * 60 * 24);
+  console.log(diferençaEmDias);
 }
 
-data("2024-01-01", "2025-01-01");
+// data("2024-01-01", "2025-01-01");
+
+// Exercicio 5
+
+function data2(dataInformada) {
+  let data = new Date(dataInformada);
+  let ano = data.getFullYear();
+  let mes = data.getMonth() + 1;
+  let dia = data.getDate();
+  return console.log(`Ano: ${ano}, Mes: ${mes}, Dia: ${dia}`);
+}
+
+// data2("2024-10-07");
+
+// Exercicio 6
+
+function idade(datanascimento) {
+  let nascimento = new Date(datanascimento);
+  let anoAtual = new Date()
+  return console.log(`A idade é: ${anoAtual.getFullYear() - nascimento.getFullYear()}`);
+}
+// idade("1990-05-15");
+
+// Exercicio 7
+
+function dataformatada(dataparaFormatar) {
+  let data3 = new Date(dataparaFormatar);
+  return console.log(`O ano formatado é: ${data3.getDate()+1}/${data3.getMonth()+1}/${data3.getFullYear()}`);
+}
+
+// dataformatada("2024-10-31");
