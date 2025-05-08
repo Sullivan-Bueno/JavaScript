@@ -57,8 +57,10 @@ function data2(dataInformada) {
 
 function idade(datanascimento) {
   let nascimento = new Date(datanascimento);
-  let anoAtual = new Date()
-  return console.log(`A idade é: ${anoAtual.getFullYear() - nascimento.getFullYear()}`);
+  let anoAtual = new Date();
+  return console.log(
+    `A idade é: ${anoAtual.getFullYear() - nascimento.getFullYear()}`
+  );
 }
 // idade("1990-05-15");
 
@@ -66,7 +68,19 @@ function idade(datanascimento) {
 
 function dataformatada(dataparaFormatar) {
   let data3 = new Date(dataparaFormatar);
-  return console.log(`O ano formatado é: ${data3.getDate()+1}/${data3.getMonth()+1}/${data3.getFullYear()}`);
+  let dataUTC3 = `${data3.getDate() + 1}/${
+    data3.getMonth() + 1
+  }/${data3.getFullYear()}`;
+  return console.log(`O ano formatado é: ${dataUTC3}`); // NÃO É UMA DATA - O TIPO DE DADO RETORNADO NÃO É DATE()
 }
 
-// dataformatada("2024-10-31");
+// dataformatada("2024-10-07");
+
+function formatoBrasileiro(datastring) {
+  let data = new Date(datastring + "T00:00:00");
+
+  let dataFormatada = data.toLocaleDateString("pt-BR");
+  console.log("Data formatada: " + dataFormatada);
+}
+
+formatoBrasileiro("2025-05-15");
