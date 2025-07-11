@@ -1,0 +1,47 @@
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+main {
+  width: 80%;
+  margin: 20px auto;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.texto-lista {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+#destacado {
+  background-color: yellow;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding: 0;
+}
+
+div {
+  display: flex;
+}
+
+input {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+}

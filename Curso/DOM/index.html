@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seleção de elementos</title>
+  </head>
+  <body>
+    <header>
+      <h1>Seleção de elementos</h1>
+    </header>
+
+    <main>
+      <section id="content">
+        <h2>Tipo de elemento (h2)</h2>
+        <h2>Outro título h2</h2>
+        <p class="texto-lista">Parágrafo</p>
+        <p class="texto-lista">Parágrafo 2</p>
+
+        <div id="destacado">
+          <ul id="unordered_list">
+            <li>Item 1</li>
+            <li class="texto-lista">Item 2</li>
+            <li class="texto-lista">Item 3</li>
+          </ul>
+        </div>
+
+        <div>
+          <input type="text" placeholder="Nome" name="username" />
+          <input type="text" placeholder="Endereço de email" name="email" />
+        </div>
+
+        <button onclick="criarElemento()">Adicionar elemento</button>
+        <ul id="lista-de-elementos"></ul>
+      </section>
+    </main>
+    <script src="script.js">
+      const listItem = document
+        .getElementById("unordered_list")
+        .getElementsByTagName("li");
+
+      for (let i = 0; i < listItem.length; i++) {
+        console.log(listItem[i]);
+      }
+    </script>
+  </body>
+</html>
