@@ -31,18 +31,11 @@
           <input type="text" placeholder="Endereço de email" name="email" />
         </div>
 
-        <button onclick="criarElemento()">Adicionar elemento</button>
+        <button onclick="adicionarItem()">Adicionar elemento</button>
+        <button onclick="removerItem()">Remover elemento</button>
         <ul id="lista-de-elementos"></ul>
       </section>
     </main>
-    <script src="script.js">
-      const listItem = document
-        .getElementById("unordered_list")
-        .getElementsByTagName("li");
-
-      for (let i = 0; i < listItem.length; i++) {
-        console.log(listItem[i]);
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

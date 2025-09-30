@@ -19,12 +19,26 @@
 // const allElements = document.querySelectorAll("*");
 // console.log("Selecionando todos os elementos: ", allElements);
 
-function criarElemento() {
-  const ul = document.getElementById("lista-de-elementos");
+// function criarElemento() {
+//   const ul = document.getElementById("lista-de-elementos");
 
+//   const novaLi = document.createElement("li");
+
+//   const novoInput = document.createElement("input");
+//   ul.appendChild(novaLi);
+//   novaLi.appendChild(novoInput);
+// }
+const lista = document.getElementById("unordered_list");
+
+function adicionarItem() {
   const novaLi = document.createElement("li");
+  novaLi.textContent = "Novo Item";
 
-  const novoInput = document.createElement("input");
-  ul.appendChild(novaLi);
-  novaLi.appendChild(novoInput);
+  lista.appendChild(novaLi);
+}
+
+function removerItem() {
+  const ultimoItem = lista.lastElementChild;
+
+  lista.removeChild(ultimoItem);
 }

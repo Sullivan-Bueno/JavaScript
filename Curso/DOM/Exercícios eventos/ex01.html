@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 1</title>
+    <style>
+      #changeColor {
+        width: 400px;
+        height: 200px;
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div  id="changeColor"></div>
+    <script>
+      const square = document.getElementById("changeColor");
+
+      function mousePorCima() {
+        square.style.backgroundColor = "black";
+      }
+
+      function mousePraFora() {
+        square.style.backgroundColor = "#f50f"
+      }
+
+      square.addEventListener("mouseover", mousePorCima);
+      square.addEventListener("mouseout", mousePraFora);
+
+      
+    </script>
+  </body>
+</html>
