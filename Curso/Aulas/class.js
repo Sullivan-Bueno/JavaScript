@@ -1,8 +1,23 @@
 class BankAccount {
+  _balance = 0;
+
   constructor(personName, initialBalance, address) {
     this.personName = personName;
-    this.balance = initialBalance;
+    this._balance = initialBalance;
     this.address = address;
+  }
+
+  get balance() {
+    return this._balance;
+  }
+
+  set balance(value) {
+    if (Math.abs(this._balance - value) > 2000) {
+      throw new Error(
+        "Não é permitido saques ou depositos maiores que 2000 reais",
+      );
+    }
+    this._balance = value;
   }
 
   printInfo() {
@@ -14,6 +29,5 @@ class BankAccount {
 
 const acc1 = new BankAccount("Sullivan", 200, "Paralelepipedo");
 
-acc1.printInfo();
+acc1.balance += 2000;
 console.log(acc1);
-console.log(acc1 instanceof BankAccount);

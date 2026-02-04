@@ -31,7 +31,7 @@ const account2 = {
 function Account(username, accountNumber, initialBalance) {
   this.name = username;
   this.accountNumber = accountNumber;
-  this.initialBalance = initialBalance;
+  this.balance = initialBalance;
   this.displayBalance = function () {
     console.log(balance);
   };
