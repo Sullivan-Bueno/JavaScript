@@ -66,17 +66,35 @@
 
 // console.log(acima500mil);
 
-const faturamento = [
-  { id: 1, valor: 1500 },
-  { id: 2, valor: 2300 },
-  { id: 3, valor: 3200 },
-  { id: 4, valor: 4100 },
-  { id: 5, valor: 1800 },
+// const faturamento = [
+//   { id: 1, valor: 1500 },
+//   { id: 2, valor: 2300 },
+//   { id: 3, valor: 3200 },
+//   { id: 4, valor: 4100 },
+//   { id: 5, valor: 1800 },
+// ];
+
+// const total = faturamento.reduce(
+//   (accumulator, currentValue) => accumulator + currentValue.valor,
+//   0,
+// );
+
+// console.log(total);
+
+const objs = [
+  { cliente: "João", pontuacao: 4 },
+  { cliente: "Maria", pontuacao: 5 },
+  {
+    cliente: "Pedro",
+    pontuacao: 3,
+  },
+  { cliente: "Ana", pontuacao: 4 },
+  { cliente: "Lucas", pontuacao: 5 },
 ];
 
-const total = faturamento.reduce(
-  (accumulator, currentValue) => accumulator + currentValue.valor,
-  0,
-);
+const result =
+  objs.reduce(
+    (accumulator, currentValue) => accumulator + currentValue.pontuacao,
+    0,
+  ) / objs.length;
 
-console.log(total);
