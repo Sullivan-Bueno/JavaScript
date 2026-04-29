@@ -19,6 +19,7 @@ function minhaoperacaoAssicrona() {
     }, 2000);
   });
 }
+
 minhaoperacaoAssicrona()
   .then((resultado) => {
     console.log({ resultado: resultado, message: "deu certo" });
